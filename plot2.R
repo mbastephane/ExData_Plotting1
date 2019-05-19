@@ -1,4 +1,4 @@
-data_epc = read.table("household_power_consumption.txt", sep=";")
+data_epc = read.table("household_power_consumption.txt", sep=";", na.strings = "?")
 names(data_epc) <- as.character(unlist(data_epc[1,]))
 data_epc <- data_epc[-1,]
 
